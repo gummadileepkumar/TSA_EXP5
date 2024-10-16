@@ -22,7 +22,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from statsmodels.tsa.seasonal import seasonal_decompose
 
-data = pd.read_csv('/content/infy_stock-Copy1.csv')
+data = pd.read_csv('infy_stock.csv')
 data.head()
 
 data['Date'] = pd.to_datetime(data['Date'], errors='coerce')
